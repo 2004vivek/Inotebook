@@ -16,6 +16,9 @@ app.post('/', (req, res) => {
 })
 app.use('/auth',auth)
 app.use('/notes',notes)
+app.get("/",(req,res)=>{
+  res.send("Backened is working")
+})
 app.listen(port, () => {
   console.log(`Inotebook app listening on port ${port}`)
 })
