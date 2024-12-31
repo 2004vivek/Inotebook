@@ -38,11 +38,9 @@ export default function Login() {
            
         }
           
-    }
-   
+      }
   return (
     <>
-    
     <div className="container my-3 ">
     <h2 className='my-3'>Login To Continue To Inotebook</h2>
     <form onSubmit={handlesubmit}>
@@ -55,7 +53,6 @@ export default function Login() {
     <label htmlFor="password" className="form-label">Password</label>
     <input type="password" className="form-control" value={credential.password} id="password" name="password" onChange={handleonchange}/>
   </div>
- 
   <button type="submit" className="btn btn-primary" >Submit</button>
 </form>
 </div>
